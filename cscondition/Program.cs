@@ -13,6 +13,7 @@ namespace cscondition
             Console.Write("숫자 입력 :");
             var input = int.Parse(Console.ReadLine());
 
+            /*
             if(input % 2 == 0)
             {
                 Console.WriteLine("짝수 입니다!");
@@ -20,6 +21,7 @@ namespace cscondition
             {
                 Console.WriteLine("홀수 입니다!");
             }
+            */
             switch(input % 2)
             {
                 case 0:
@@ -43,16 +45,13 @@ namespace cscondition
             {
                 Console.WriteLine("아침 먹을 시간입니다");
             }
+            else if(DateTime.Now.Hour < 15)
+            {
+                Console.WriteLine("점심 먹을 시간입니다");
+            }
             else
             {
-                if(DateTime.Now.Hour < 15)
-                {
-                    Console.WriteLine("점심 먹을 시간입니다");
-                }
-                else
-                {
-                    Console.WriteLine("저녁 먹을 시간입니다");
-                }    
+                Console.WriteLine("저녁 먹을 시간입니다");   
             }
         }
     }
