@@ -87,6 +87,17 @@ namespace cscondition
                     Console.WriteLine("대체 어느 행성에 살고 계십니까?");
                     break;
             }
+
+            Console.Write("입력: ");
+            String line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요~~~~!");
+            }
+            else
+            {
+                Console.WriteLine("^^* 인사 안해요?");
+            }
         }
     }
 }
